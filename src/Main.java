@@ -25,8 +25,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 //    double area = circle.getArea(radius , 0);
 //        System.out.println("area = " + area);
 
-//    Shape circle = container.getBean("circle", Shape.class);
-//    circle.draw();
+    circle.draw();
 //
 //    Shape square = container.getBean("square", Shape.class);
 //    square.draw();
@@ -35,7 +34,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 //    square.draw();
 
 
-
+    ((ClassPathXmlApplicationContext)container).close();
 
 
   }

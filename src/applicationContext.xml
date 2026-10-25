@@ -25,8 +25,12 @@
   <bean id="rectangle"
           class="com.ioc.RectangleShape">
     <constructor-arg ref="draw_shape"/>
+</bean>
 
-  </bean>
+  <bean id="connectDB"
+        class="com.ioc.DatabaseConnection"
+        init-method="connectingDB"
+        destroy-method="desConnectingDB"/>
 
 </beans>
 
