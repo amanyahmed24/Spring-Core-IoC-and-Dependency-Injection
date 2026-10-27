@@ -9,32 +9,35 @@
 
 
     <!-- Define your beans here -->
-<bean id="draw_shape" class="com.ioc.DrawShape">
-</bean>
-    <bean id="circle"
-          class="com.ioc.CircleShape">
-      <constructor-arg ref="draw_shape"/>
-    </bean>
+<!--<bean id="draw_shape" class="com.ioc.DrawShape">-->
+<!--</bean>-->
+<!--    <bean id="circle"-->
+<!--          class="com.ioc.CircleShape">-->
+<!--      <constructor-arg ref="draw_shape"/>-->
+<!--    </bean>-->
 
-    <bean id="square"
-          class="com.ioc.SquareShape">
-      <constructor-arg ref="draw_shape"/>
+<!--    <bean id="square"-->
+<!--          class="com.ioc.SquareShape">-->
+<!--      <constructor-arg ref="draw_shape"/>-->
 
-    </bean>
+<!--    </bean>-->
 
-  <bean id="rectangle"
-          class="com.ioc.RectangleShape">
-    <constructor-arg ref="draw_shape"/>
-</bean>
+<!--  <bean id="rectangle"-->
+<!--          class="com.ioc.RectangleShape">-->
+<!--    <constructor-arg ref="draw_shape"/>-->
+<!--</bean>-->
 
-  <bean id="connectDB"
-        class="com.ioc.DatabaseConnection"
-        init-method="connectingDB"
-        destroy-method="desConnectingDB"/>
-
-</beans>
+<!--  <bean id="connectDB"-->
+<!--        class="com.ioc.DatabaseConnection"-->
+<!--        init-method="connectingDB"-->
+<!--        destroy-method="desConnectingDB"/>-->
 
 
 
 
+<!--  using annotation -->
 
+  <context:component-scan base-package="com.ioc"/>
+
+
+  </beans>

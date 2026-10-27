@@ -1,4 +1,6 @@
 package com.ioc;
+import org.springframework.stereotype.Component;
+@Component
 
 public class DatabaseConnection {
   public void connectingDB() {
